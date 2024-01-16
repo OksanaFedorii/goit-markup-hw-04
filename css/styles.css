@@ -69,12 +69,12 @@ img {
 /** --------------CONTAINERS----------------- */
 .header {
     border-bottom: 1px solid  #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
 .container-header {
     display: flex;
     border-bottom: 1px solid  #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 } 
 
 .container-hero {
@@ -343,7 +343,8 @@ img {
     align-items: center;
     width: 40px;
     height: 40px;
-    
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 250ms ;
 }
 
 .our-team-icon-link:hover, 
@@ -359,8 +360,6 @@ img {
     height: 100%;
     background-color: #4D5AE5; 
     border-radius: 50%;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    transition-duration: 250ms ;
 }
 
 .link-color {
@@ -386,6 +385,8 @@ img {
 
 .our-portfolio-card{
     position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-duration: 250ms;
 }
 
 .our-portfolio-item {
@@ -396,11 +397,13 @@ img {
     color:  #fdf4f5;
 }
 
-.our-portfolio-card:hover .cover-portfolio-card {
+.our-portfolio-card:hover .cover-portfolio-card { 
     transform: translateY(0%);
+    
+}
+
+.container-portf {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    transition-duration: 250ms ;
 }
 
 .our-portfolio-card:hover  .small-container {
